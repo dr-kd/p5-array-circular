@@ -185,7 +185,8 @@ various similar modules.
 =head2 TODO
 
 Not thread safe.  See implementation of L<Hash::MultiValue> for
-implementation of thread safety.
+implementation of thread safety.  Alternatively use
+L<Hash::Util::FieldHash> or L<Hash::Util::FieldHash::Compat>.
 
 =head2 AUTHOR COPYRIGHT AND LICENSE
 
