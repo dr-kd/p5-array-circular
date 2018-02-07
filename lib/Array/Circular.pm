@@ -124,14 +124,12 @@ Circular array, tracks how many times it's been round.
     my $element     = $l->next;
     my $two_forward = $l->next(2);
 
-=head3 previous
-=head3 prev
+=head3 previous / prev
 
     my $element = $l->previous;
     my $two_back = $l->previous(2);
 
-=head3 current
-=head3 curr
+=head3 current / curr
 
     my $element = $l->current;
 
