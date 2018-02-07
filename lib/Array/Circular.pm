@@ -106,7 +106,7 @@ Circular array, tracks how many times it's been round.
 
 =head2 SYNOPSIS
 
-    my $a = Array->Circular->new(qw/once upon a time there was/);
+    my $a = Array::Circular->new(qw/once upon a time there was/);
     my $current = $l->next;
     say "They are the same" if $current == $l->current;
     my $first = $l->previous;
