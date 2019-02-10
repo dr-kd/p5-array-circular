@@ -98,7 +98,7 @@ __END__
 
 =head1 NAME
 
-Array::Circular
+Array::Circular - Provide an array data structure that can go around in circles.
 
 =head2 DESCRIPTION
 
