@@ -48,7 +48,7 @@ sub next {
     if ($num) {
 	carp "Calls to next with a count of how many to go forward must be a positive number" if $num < 0;
 	$num--;
-	$num->next for 1 .. $num; # This is inefficient but simple.  Could use $self->me to compute where we are as optimisation
+	$self->next for 1 .. $num; # This is inefficient but simple.  Could use $self->me to compute where we are as optimisation
     }
 
 
@@ -67,7 +67,7 @@ sub previous {
     if ($num) {
 	carp "Calls to next with a count of how many to go forward must be a positive number" if $num < 0;
 	$num--;
-	$num->previous for 1 .. $num; # This is inefficient but simple.  Could use $self->me to compute where we are as optimisation
+	$self->previous for 1 .. $num; # This is inefficient but simple.  Could use $self->me to compute where we are as optimisation
     }
 
     if ( $self->me->{current} == 0 ) {
