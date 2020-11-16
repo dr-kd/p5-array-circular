@@ -155,22 +155,22 @@ Circular array, tracks how many times it's been round.
 
 =head2 SYNOPSIS
 
-    my $a = Array::Circular->new(qw/once upon a time there was/);
+    my $l = Array::Circular->new(qw/once upon a time there was/);
     my $current = $l->next;
-    say "They are the same" if $current == $l->current;
+    say "They are the same" if $current eq $l->current;
     my $first = $l->previous;
-    say "Also the same" if $first == $l->current;
+    say "Also the same" if $first eq $l->current;
     say "We went around the loop " . $l->loops . " times";
 
 =head2 METHODS
 
 =head3 new
 
-    my $a = Array::Circular->new(qw/this is a test/);
+    my $l = Array::Circular->new(qw/this is a test/);
 
 =head3 clone
 
-    my $new = $a->clone;
+    my $new = $l->clone;
 
 =head3 next
 
