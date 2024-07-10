@@ -186,7 +186,7 @@ Circular array, tracks how many times it's been round.
 
     my $element     = $l->previous;
     my $two_back    = $l->previous(2);
-    my $two_forward = $l->prev(-2);
+    my $two_forward = $l->previous(-2);
 
 =head3 current / curr
 
