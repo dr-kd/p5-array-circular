@@ -180,11 +180,13 @@ Circular array, tracks how many times it's been round.
 
     my $element     = $l->next;
     my $two_forward = $l->next(2);
+    my $two_back    = $l->next(-2);
 
 =head3 previous / prev
 
-    my $element = $l->previous;
-    my $two_back = $l->previous(2);
+    my $element     = $l->previous;
+    my $two_back    = $l->previous(2);
+    my $two_forward = $l->prev(-2);
 
 =head3 current / curr
 
