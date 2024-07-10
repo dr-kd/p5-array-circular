@@ -1,3 +1,5 @@
+0.008 ?
+  Allow negative offsets for the previous() and next() methods.
 0.007 29/8/2019
   Add clone method
 0.006 13/6/2019
