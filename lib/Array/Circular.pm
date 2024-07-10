@@ -55,10 +55,10 @@ sub next {
     my ($self, $num) = @_;
     return unless @$self;
     return $self->current if defined $num && $num == 0; # undefined just goes next.  zero gives current.
-    if ($num < 0) {
+    if ($num && $num < 0) {
   $self->previous(1 + abs $num);
     }
-    else {
+    elsif ($num) {
 	$num--;
 	$self->next for 1 .. $num; # This is inefficient but simple.  Could use $self->me to compute where we are as optimisation
     }
@@ -75,10 +75,10 @@ sub previous {
     my ($self, $num) = @_;
     return unless @$self;
 
-    if ($num < 0) {
+    if ($num && $num < 0) {
   $self->next(1 + abs $num);
     }
-    else {
+    elsif ($num) {
 	$num--;
 	$self->previous for 1 .. $num; # This is inefficient but simple.  Could use $self->me to compute where we are as optimisation
     }
