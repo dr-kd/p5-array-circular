@@ -63,7 +63,6 @@ sub next {
 	$self->next for 1 .. $num; # This is inefficient but simple.  Could use $self->me to compute where we are as optimisation
     }
 
-
     my $last_index = $#{$self};
     if ( $self->me->{current} == $last_index ) {
 	$self->me->{current} = -1;
